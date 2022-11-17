@@ -50,6 +50,8 @@ class MergeImagesViewModel: MergeImagesViewModelProtocol {
     /// This will be the core function which will merge all the images and convert 1 image
     /// - Parameter arr: Array of Images
     private func mergeImagesIntoOne(arr: [UIImage]) {
-        delegate?.mergedImage(image: UIImage(named: "1")!)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+            self.delegate?.mergedImage(image: UIImage(named: "1")!)
+        })
     }
 }

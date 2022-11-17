@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3BCBE82925C20D00EAC8D2 /* MergeImagesVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BCBE72925C20D00EAC8D2 /* MergeImagesVMTest.swift */; };
+		FC3BCBE92925C27D00EAC8D2 /* MergeImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA107572924E47B00241A1E /* MergeImagesViewModel.swift */; };
 		FCA107392924E0FC00241A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA107382924E0FC00241A1E /* AppDelegate.swift */; };
 		FCA1073B2924E0FC00241A1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1073A2924E0FC00241A1E /* SceneDelegate.swift */; };
 		FCA107422924E0FD00241A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA107412924E0FD00241A1E /* Assets.xcassets */; };
@@ -19,8 +21,20 @@
 		FCA1075B2924E4C800241A1E /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1075A2924E4C800241A1E /* ViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FC3BCBE22925C16A00EAC8D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCA1072D2924E0FC00241A1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCA107342924E0FC00241A1E;
+			remoteInfo = ImageMerger;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		FC3BCBD92925B2AA00EAC8D2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FC3BCBDE2925C16A00EAC8D2 /* ImageMergerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageMergerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3BCBE72925C20D00EAC8D2 /* MergeImagesVMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeImagesVMTest.swift; sourceTree = "<group>"; };
 		FCA107352924E0FC00241A1E /* ImageMerger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageMerger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA107382924E0FC00241A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA1073A2924E0FC00241A1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FC3BCBDB2925C16A00EAC8D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCA107322924E0FC00241A1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,11 +67,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC3BCBDF2925C16A00EAC8D2 /* ImageMergerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC3BCBE72925C20D00EAC8D2 /* MergeImagesVMTest.swift */,
+			);
+			path = ImageMergerTests;
+			sourceTree = "<group>";
+		};
 		FCA1072C2924E0FC00241A1E = {
 			isa = PBXGroup;
 			children = (
 				FC3BCBD92925B2AA00EAC8D2 /* README.md */,
 				FCA107372924E0FC00241A1E /* ImageMerger */,
+				FC3BCBDF2925C16A00EAC8D2 /* ImageMergerTests */,
 				FCA107362924E0FC00241A1E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				FCA107352924E0FC00241A1E /* ImageMerger.app */,
+				FC3BCBDE2925C16A00EAC8D2 /* ImageMergerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +139,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FC3BCBDD2925C16A00EAC8D2 /* ImageMergerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3BCBE42925C16A00EAC8D2 /* Build configuration list for PBXNativeTarget "ImageMergerTests" */;
+			buildPhases = (
+				FC3BCBDA2925C16A00EAC8D2 /* Sources */,
+				FC3BCBDB2925C16A00EAC8D2 /* Frameworks */,
+				FC3BCBDC2925C16A00EAC8D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC3BCBE32925C16A00EAC8D2 /* PBXTargetDependency */,
+			);
+			name = ImageMergerTests;
+			productName = ImageMergerTests;
+			productReference = FC3BCBDE2925C16A00EAC8D2 /* ImageMergerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FCA107342924E0FC00241A1E /* ImageMerger */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCA107492924E0FD00241A1E /* Build configuration list for PBXNativeTarget "ImageMerger" */;
@@ -135,6 +184,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					FC3BCBDD2925C16A00EAC8D2 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = FCA107342924E0FC00241A1E;
+					};
 					FCA107342924E0FC00241A1E = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -154,11 +207,19 @@
 			projectRoot = "";
 			targets = (
 				FCA107342924E0FC00241A1E /* ImageMerger */,
+				FC3BCBDD2925C16A00EAC8D2 /* ImageMergerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FC3BCBDC2925C16A00EAC8D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCA107332924E0FC00241A1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +233,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FC3BCBDA2925C16A00EAC8D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3BCBE92925C27D00EAC8D2 /* MergeImagesViewModel.swift in Sources */,
+				FC3BCBE82925C20D00EAC8D2 /* MergeImagesVMTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCA107312924E0FC00241A1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +258,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FC3BCBE32925C16A00EAC8D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCA107342924E0FC00241A1E /* ImageMerger */;
+			targetProxy = FC3BCBE22925C16A00EAC8D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FCA107432924E0FD00241A1E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -200,6 +278,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FC3BCBE52925C16A00EAC8D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshuman.ImageMergerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageMerger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImageMerger";
+			};
+			name = Debug;
+		};
+		FC3BCBE62925C16A00EAC8D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshuman.ImageMergerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageMerger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImageMerger";
+			};
+			name = Release;
+		};
 		FCA107472924E0FD00241A1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -369,6 +481,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FC3BCBE42925C16A00EAC8D2 /* Build configuration list for PBXNativeTarget "ImageMergerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3BCBE52925C16A00EAC8D2 /* Debug */,
+				FC3BCBE62925C16A00EAC8D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FCA107302924E0FC00241A1E /* Build configuration list for PBXProject "ImageMerger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
