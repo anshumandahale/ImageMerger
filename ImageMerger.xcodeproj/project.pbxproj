@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		FCA107392924E0FC00241A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA107382924E0FC00241A1E /* AppDelegate.swift */; };
 		FCA1073B2924E0FC00241A1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1073A2924E0FC00241A1E /* SceneDelegate.swift */; };
-		FCA1073D2924E0FC00241A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1073C2924E0FC00241A1E /* ViewController.swift */; };
-		FCA107402924E0FC00241A1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA1073E2924E0FC00241A1E /* Main.storyboard */; };
 		FCA107422924E0FD00241A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA107412924E0FD00241A1E /* Assets.xcassets */; };
 		FCA107452924E0FD00241A1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA107432924E0FD00241A1E /* LaunchScreen.storyboard */; };
+		FCA1074E2924E21600241A1E /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1074D2924E21600241A1E /* CoordinatorProtocol.swift */; };
+		FCA107502924E23B00241A1E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1074F2924E23B00241A1E /* AppCoordinator.swift */; };
+		FCA107552924E3F700241A1E /* MergeImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA107532924E3F700241A1E /* MergeImagesViewController.swift */; };
+		FCA107562924E3F700241A1E /* MergeImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCA107542924E3F700241A1E /* MergeImagesViewController.xib */; };
+		FCA107582924E47B00241A1E /* MergeImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA107572924E47B00241A1E /* MergeImagesViewModel.swift */; };
+		FCA1075B2924E4C800241A1E /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1075A2924E4C800241A1E /* ViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC3BCBD92925B2AA00EAC8D2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FCA107352924E0FC00241A1E /* ImageMerger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageMerger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA107382924E0FC00241A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA1073A2924E0FC00241A1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCA1073C2924E0FC00241A1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCA1073F2924E0FC00241A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCA107412924E0FD00241A1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA107442924E0FD00241A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCA107462924E0FD00241A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA1074D2924E21600241A1E /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		FCA1074F2924E23B00241A1E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FCA107532924E3F700241A1E /* MergeImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeImagesViewController.swift; sourceTree = "<group>"; };
+		FCA107542924E3F700241A1E /* MergeImagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MergeImagesViewController.xib; sourceTree = "<group>"; };
+		FCA107572924E47B00241A1E /* MergeImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeImagesViewModel.swift; sourceTree = "<group>"; };
+		FCA1075A2924E4C800241A1E /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +49,7 @@
 		FCA1072C2924E0FC00241A1E = {
 			isa = PBXGroup;
 			children = (
+				FC3BCBD92925B2AA00EAC8D2 /* README.md */,
 				FCA107372924E0FC00241A1E /* ImageMerger */,
 				FCA107362924E0FC00241A1E /* Products */,
 			);
@@ -56,15 +66,43 @@
 		FCA107372924E0FC00241A1E /* ImageMerger */ = {
 			isa = PBXGroup;
 			children = (
+				FCA107592924E48C00241A1E /* Protocols */,
+				FCA107522924E3CF00241A1E /* View */,
+				FCA1074C2924E1FE00241A1E /* Coordinator */,
 				FCA107382924E0FC00241A1E /* AppDelegate.swift */,
 				FCA1073A2924E0FC00241A1E /* SceneDelegate.swift */,
-				FCA1073C2924E0FC00241A1E /* ViewController.swift */,
-				FCA1073E2924E0FC00241A1E /* Main.storyboard */,
 				FCA107412924E0FD00241A1E /* Assets.xcassets */,
 				FCA107432924E0FD00241A1E /* LaunchScreen.storyboard */,
 				FCA107462924E0FD00241A1E /* Info.plist */,
 			);
 			path = ImageMerger;
+			sourceTree = "<group>";
+		};
+		FCA1074C2924E1FE00241A1E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FCA1074F2924E23B00241A1E /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FCA107522924E3CF00241A1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCA107532924E3F700241A1E /* MergeImagesViewController.swift */,
+				FCA107572924E47B00241A1E /* MergeImagesViewModel.swift */,
+				FCA107542924E3F700241A1E /* MergeImagesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCA107592924E48C00241A1E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FCA1074D2924E21600241A1E /* CoordinatorProtocol.swift */,
+				FCA1075A2924E4C800241A1E /* ViewModelProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA107562924E3F700241A1E /* MergeImagesViewController.xib in Resources */,
 				FCA107452924E0FD00241A1E /* LaunchScreen.storyboard in Resources */,
 				FCA107422924E0FD00241A1E /* Assets.xcassets in Resources */,
-				FCA107402924E0FC00241A1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +176,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA1073D2924E0FC00241A1E /* ViewController.swift in Sources */,
 				FCA107392924E0FC00241A1E /* AppDelegate.swift in Sources */,
+				FCA107582924E47B00241A1E /* MergeImagesViewModel.swift in Sources */,
+				FCA107502924E23B00241A1E /* AppCoordinator.swift in Sources */,
+				FCA1074E2924E21600241A1E /* CoordinatorProtocol.swift in Sources */,
+				FCA1075B2924E4C800241A1E /* ViewModelProtocol.swift in Sources */,
 				FCA1073B2924E0FC00241A1E /* SceneDelegate.swift in Sources */,
+				FCA107552924E3F700241A1E /* MergeImagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FCA1073E2924E0FC00241A1E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCA1073F2924E0FC00241A1E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCA107432924E0FD00241A1E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +325,6 @@
 				INFOPLIST_FILE = ImageMerger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +351,6 @@
 				INFOPLIST_FILE = ImageMerger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
