@@ -18,7 +18,6 @@
 		FCA107552924E3F700241A1E /* MergeImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA107532924E3F700241A1E /* MergeImagesViewController.swift */; };
 		FCA107562924E3F700241A1E /* MergeImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCA107542924E3F700241A1E /* MergeImagesViewController.xib */; };
 		FCA107582924E47B00241A1E /* MergeImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA107572924E47B00241A1E /* MergeImagesViewModel.swift */; };
-		FCA1075B2924E4C800241A1E /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1075A2924E4C800241A1E /* ViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,6 @@
 		FCA107532924E3F700241A1E /* MergeImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeImagesViewController.swift; sourceTree = "<group>"; };
 		FCA107542924E3F700241A1E /* MergeImagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MergeImagesViewController.xib; sourceTree = "<group>"; };
 		FCA107572924E47B00241A1E /* MergeImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeImagesViewModel.swift; sourceTree = "<group>"; };
-		FCA1075A2924E4C800241A1E /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				FCA1074D2924E21600241A1E /* CoordinatorProtocol.swift */,
-				FCA1075A2924E4C800241A1E /* ViewModelProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -250,7 +247,6 @@
 				FCA107582924E47B00241A1E /* MergeImagesViewModel.swift in Sources */,
 				FCA107502924E23B00241A1E /* AppCoordinator.swift in Sources */,
 				FCA1074E2924E21600241A1E /* CoordinatorProtocol.swift in Sources */,
-				FCA1075B2924E4C800241A1E /* ViewModelProtocol.swift in Sources */,
 				FCA1073B2924E0FC00241A1E /* SceneDelegate.swift in Sources */,
 				FCA107552924E3F700241A1E /* MergeImagesViewController.swift in Sources */,
 			);

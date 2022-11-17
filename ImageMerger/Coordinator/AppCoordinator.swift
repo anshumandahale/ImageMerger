@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol AppCoordinatorProtocol {
-    
+    //Any navigations from the MergeImagesViewController will be mentioned here
 }
 
 class AppCoordinator: Coordinator {
